@@ -2,8 +2,9 @@ import json
 import requests
 import os
 from dotenv import load_dotenv
-from api_fetcher import getPuuid
-from api_fetcher import getChampionsIds
+from api_fetcher import get_puuid
+from api_fetcher import get_champions_ids
+from api_fetcher import get_region
 
 JSON_CHAMPION_URL = "http://ddragon.leagueoflegends.com/cdn/6.24.1/data/en_US/champion.json"
 
@@ -12,13 +13,14 @@ api_key = os.environ.get("X-Riot-Token")
 headers = {
     'X-Riot-Token': api_key,
 }
+api_region = get_region()
 
 username = input('Enter your League of Legends username: ')
 count = input('Enter how many champions would you like to see: ')
 
-puuid = getPuuid(username)
+puuid = get_puuid(username, api_region)
 
-champion_Ids = getChampionsIds(puuid, count)
+champion_Ids = get_champions_ids(puuid, count, api_region)
 
 response = requests.get(JSON_CHAMPION_URL, headers=headers)
 
