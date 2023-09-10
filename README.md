@@ -12,7 +12,7 @@ Provide the following details:
 
 You will need the following installed:
 
-Python (version 3.10.7 or higher)
+Python (version 3.11 or higher)
 
 ### Installation
 
@@ -31,5 +31,4 @@ pip install python-dotenv
 
 ## Screenshot of output
 
-![image](https://github.com/nejcintihar/best-summoner-champions/assets/63637814/2e29f58b-bc3e-471a-9465-bd22d0055bf9)
-
+![image](https://github.com/nejcintihar/best-summoner-champions/assets/63637814/b689d571-ea5e-4c70-9cfd-6315727e530a)
