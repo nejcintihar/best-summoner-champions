@@ -28,7 +28,3 @@ pip install requests
 pip install python-dotenv
 ```
 3. Run the program
-
-## Screenshot of output
-
-![image](https://github.com/nejcintihar/best-summoner-champions/assets/63637814/b689d571-ea5e-4c70-9cfd-6315727e530a)
